@@ -12,26 +12,14 @@ A simple IP tracker for MacOS that logs your public IP address and notifies you 
    git clone https://github.com/aflansburg/pub-ip-tracker.git
    
    cd pub-ip-tracker
-   
-   npm install
-
-   npm link
    ```
 
-## Usage
-*Run the tracker*
-```sh
-ip-tracker
-```
-
-### Run as background process
-
-#### Via setup script
+### Automatic setup + Run as background process
 ```sh
 ./setup.sh
 ```
 
-#### Via manual setup
+### Manual setup + Run as background process
 ```sh
 # install pm2
 npm install -g pm2
@@ -56,6 +44,14 @@ pm2 delete ip-tracker
 pm2 logs ip-tracker
 ```
 
+### Run as one off
+```sh
+npm install
+
+npm link
+
+ip-tracker
+```
 
 
 ## Removal
