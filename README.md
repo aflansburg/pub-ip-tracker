@@ -9,7 +9,7 @@ A simple IP tracker for MacOS that logs your public IP address and notifies you 
 ### Clone the repository:
 
    ```sh
-   git clone https://github.com/aflansburg/ip-tracker.git
+   git clone https://github.com/aflansburg/pub-ip-tracker.git
    
    cd ip-tracker
    
