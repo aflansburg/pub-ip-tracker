@@ -11,7 +11,7 @@ A simple IP tracker for MacOS that logs your public IP address and notifies you 
    ```sh
    git clone https://github.com/aflansburg/pub-ip-tracker.git
    
-   cd ip-tracker
+   cd pub-ip-tracker
    
    npm install
 
