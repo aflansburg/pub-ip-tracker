@@ -2,6 +2,10 @@
 
 npm install -g pm2
 
+npm install
+
+npm link
+
 pm2 start ip-tracker --name ip-tracker
 
 pm2 startup
