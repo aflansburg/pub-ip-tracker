@@ -24,7 +24,14 @@ A simple IP tracker for MacOS that logs your public IP address and notifies you 
 ip-tracker
 ```
 
-### Advanced usage with `pm2` for running as a background process and at startup
+### Run as background process
+
+#### Via setup script
+```sh
+./setup.sh
+```
+
+#### Via manual setup
 ```sh
 # install pm2
 npm install -g pm2
@@ -47,14 +54,27 @@ pm2 delete ip-tracker
 
 # logs
 pm2 logs ip-tracker
-
 ```
 
+
+
 ## Removal
+
+### Scripted removal
+```sh
+./remove.sh
+```
+
+### Manual removal
 ```sh
 pm2 stop ip-tracker
 
 pm2 delete ip-tracker
+
+# sometimes you may run into issues with stop and/or delete and have to run
+pm2 save
+# or
+pm2 save --force
 
 # cd to the directory of this project
 npm unlink -g
