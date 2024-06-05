@@ -1,0 +1,17 @@
+{
+  "name": "ip-tracker",
+  "version": "1.0.0",
+  "description": "A simple public IP tracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "ip-tracker": "./index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
